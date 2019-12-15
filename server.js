@@ -24,13 +24,18 @@ function start() {
             name: "selection",
             message: "What do you want to do?",
             choices: [
-                "Add a department",
+                
+                
                 "Add a job",
                 "Add a worker",
+                "Add a department",
+                
+                "View a job"
+                "View a department",
                 "View a worker",
                 "Update a worker",
-                "View a department",
-                "View a job"
+            
+                
             ]
         }])
 
@@ -44,8 +49,7 @@ function start() {
             case "View a department":  viewDepartmentInfo();
                 break; case "View a job":  viewjobInfo();
                 break;  case "View a worker":
-                viewworkerInfo();
-                break; case "Update a worker": updateDepartmentInfo();
+                viewworkerInfo();  break; case "Update a worker": updateDepartmentInfo();
                 break;
             default:
                 break;
@@ -97,11 +101,9 @@ function getworkerInfo() {
                 type: "input",
                 name: "name",
                 message: "What is the worker's first name?"
-            },
-            {
-                type: "input",
-                name: "name",
-                message: "What is the worker's last name?"
+            }, {  type: "input",
+ name: "name",
+  message: "What is the worker's last name?"
             },
             {
                 type: "input",
