@@ -37,26 +37,15 @@ function start() {
     .then(function(response) {
         console.log(response);
         switch (response.selection) {
-            case "Add a department":
-                getDepartmentInfo();
+            case "Add a department":  getDepartmentInfo();
                 break;
-            case "Add a job":
-                getjobInfo();
+            case "Add a job": getjobInfo(); break; case "Add a worker": getworkerInfo();
                 break;
-            case "Add a worker":
-                getworkerInfo();
-                break;
-            case "View a department":
-                viewDepartmentInfo();
-                break;
-            case "View a job":
-                viewjobInfo();
-                break;
-            case "View a worker":
+            case "View a department":  viewDepartmentInfo();
+                break; case "View a job":  viewjobInfo();
+                break;  case "View a worker":
                 viewworkerInfo();
-                break;
-            case "Update a worker":
-                updateDepartmentInfo();
+                break; case "Update a worker": updateDepartmentInfo();
                 break;
             default:
                 break;
@@ -128,22 +117,6 @@ function getworkerInfo() {
         .then(function(response) {
             console.log(response);
         });
-}
 
-function viewDepartmentInfo() {
-    console.log("getDepartmentInfo");
-}
-
-function viewjobInfo() {
-    console.log("getjobInfo");
-}
-
-function viewworkerInfo() {
-    console.log("getworkerInfo");
-}
-
-function updateworkerInfo() {
-    console.log("getworkerInfo");
-}
 
 connection.end();
