@@ -24,8 +24,7 @@ function start() {
             name: "selection",
             message: "What do you want to do?",
             choices: [
-                
-                
+              
                 "Add a job",
                 "Add a worker",
                 "Add a department",
